@@ -15,7 +15,7 @@ import SwiftUI
 struct GuestEventCard: View {
     let title: String
     let date: String
-    let city: String
+    let cityOrAddress: String
     let isPublic: Bool
     
     var body: some View {
@@ -27,7 +27,7 @@ struct GuestEventCard: View {
                 Text(date)
                     .font(.caption)
                     .foregroundColor(.white.opacity(0.8))
-                Text(city)
+                Text(cityOrAddress)
                     .font(.caption2)
                     .foregroundColor(.white.opacity(0.6))
             }
@@ -50,7 +50,7 @@ struct GuestEventCard: View {
     GuestEventCard(
         title: "Halloween Bash",
         date: "Oct 31, 2025",
-        city: "Fullerton",
+        cityOrAddress: "Fullerton",
         isPublic: true
     )
     .padding()
